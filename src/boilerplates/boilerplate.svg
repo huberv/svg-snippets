@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:lang="en"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     height="320px" width="140px" >
+    <title>svg boilerplate</title>
+    <style type="text/css">
+        circle {
+            stroke: black;
+            stroke-width: 3;
+        }
+        .light {
+            stroke-width: 2;
+        }
+    </style>
+    <defs>
+        <circle id="light" cx="70" r="30" />
+    </defs>
+    <use xlink:href="#light" y="80" fill="red" />
+</svg>
