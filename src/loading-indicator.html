@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Loading indicator with CSS animation</title>
+    <style>
+        @keyframes fade {
+            33.3% {
+                visibility: visible;
+            }
+            100% {
+                visibility: hidden;
+            }
+        }
+
+        .grey {
+            animation: fade 6s step-start infinite;
+        }
+
+        .c1 .grey {
+            animation-delay: -2s;
+        }
+
+        .c2 .grey {
+            animation-delay: -4s;
+        }
+    </style>
+</head>
+
+<body>
+    <svg width="400px" height="400px">
+        <defs>
+            <circle id="circle" cy="50" r="10"></circle>
+        </defs>
+        <g class="c1">
+            <use href="#circle" x="50" fill="black" />
+            <use class="grey" href="#circle" x="50" fill="grey" />
+        </g>
+        <g class="c2">
+            <use href="#circle" x="80" fill="black" />
+            <use class="grey" href="#circle" x="80" fill="grey" visibility="hidden" />
+        </g>
+        <g class="c3">
+            <use href="#circle" x="110" fill="black"/>
+            <use class="grey" href="#circle" x="110" fill="grey" visibility="hidden" />
+        </g>
+    </svg>
+</body>
+
+</html>

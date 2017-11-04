@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "My personal collection of SVG-related code snippets",
   "scripts": {
-    "start": "browser-sync start --server --files src/*/*.html",
+    "start": "browser-sync start --server --files src/**/*.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
