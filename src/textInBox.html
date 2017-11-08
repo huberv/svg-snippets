@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>text in box</title>
+</head>
+
+<body>
+    <svg width="400px" height="400px">
+        <rect x="0" y="0" width="10" height="14" fill="none" stroke="black" />
+        <text class="text" x="0" y="14" font-family="Verdana" font-size="14" color="black">test</text>
+    </svg>
+    <script>
+        const textEl = document.getElementsByClassName("text")[0];
+        console.log("Text length:", textEl.getComputedTextLength());
+        const rectEl = document.getElementsByTagName("rect")[0].setAttribute("width", textEl.getComputedTextLength());
+    </script>
+</body>
+
+</html>

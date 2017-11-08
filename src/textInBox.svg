@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:lang="en"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     height="320px" width="140px" viewBox="0 0 140 320">
+    <title>text in box</title>
+    <rect x="10" y="10" width="50" height="50" fill="blue"><text x="0" y="10" font-family="Verdana" font-size="14" color="black">test</text></rect>
+    <text x="0" y="10" font-family="Verdana" font-size="14" color="black">test</text>
+</svg>
